@@ -82,6 +82,21 @@ body {
 .feature-card .card-title { font-weight: 700; }
 .feature-card .card-text { color: #c9c1d5; font-size: .9rem; line-height: 1.7; }
 
+.gallery-section { background: var(--ink); }
+.gallery-eyebrow { color: #ff79d2; font-size: .73rem; font-weight: 800; letter-spacing: .16em; }
+.gallery-title { font-family: "Space Grotesk", sans-serif; font-size: clamp(2.2rem, 4vw, 3.5rem); font-weight: 700; letter-spacing: -.06em; line-height: 1.05; }
+.gallery-title span { color: #f77ccc; }
+.gallery-intro { max-width: 400px; color: #c9c1d5; line-height: 1.7; }
+.gallery-carousel { overflow: hidden; border: 1px solid var(--line); background: #171126; }
+.gallery-carousel .carousel-item { height: clamp(300px, 52vw, 600px); }
+.gallery-carousel .carousel-item::after { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(16, 11, 31, .82), transparent 58%); content: ""; }
+.gallery-carousel .carousel-item img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-carousel .carousel-caption { z-index: 1; right: 12%; bottom: 3rem; left: 12%; }
+.gallery-caption-label { color: #ff91d8; font-size: .7rem; font-weight: 800; letter-spacing: .16em; }
+.gallery-carousel .carousel-caption h3 { margin-top: .5rem; font-family: "Space Grotesk", sans-serif; font-size: clamp(1.8rem, 4vw, 3.5rem); font-weight: 700; }
+.gallery-carousel .carousel-indicators [data-bs-target] { width: 26px; height: 3px; border: 0; }
+.gallery-carousel .carousel-control-prev, .gallery-carousel .carousel-control-next { z-index: 2; width: 9%; }
+
 @media (max-width: 991.98px) {
   .navbar-collapse { padding: .75rem 0 1rem; }
   .navbar-nav .nav-link { padding-left: 0; }
@@ -92,4 +107,5 @@ body {
   .hero-section > .container { padding-top: 3.5rem; padding-bottom: 3.5rem; }
   .hero-title { font-size: clamp(3rem, 14vw, 4.5rem); }
   .hero-subtitle { font-size: 1rem; }
+  .gallery-carousel .carousel-caption { right: 12%; bottom: 2.5rem; left: 12%; }
 }
