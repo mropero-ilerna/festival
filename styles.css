@@ -71,6 +71,17 @@ body {
 .hero-image { width: 100%; max-height: 570px; object-fit: cover; box-shadow: 0 24px 70px rgba(0, 0, 0, .35) !important; }
 .hero-actions .btn { padding-right: 1.5rem; padding-left: 1.5rem; }
 
+.features-section { background: #171126; }
+.features-eyebrow { color: #ff79d2; font-size: .73rem; font-weight: 800; letter-spacing: .16em; }
+.features-title { font-family: "Space Grotesk", sans-serif; font-size: clamp(2.2rem, 4vw, 3.5rem); font-weight: 700; letter-spacing: -.06em; }
+.features-title span { color: #f77ccc; }
+.features-intro { max-width: 400px; color: #c9c1d5; line-height: 1.7; }
+.feature-card { border-color: var(--line) !important; background: linear-gradient(145deg, #211a31, #191326); color: var(--white); transition: transform .2s ease, border-color .2s ease; }
+.feature-card:hover { transform: translateY(-4px); border-color: rgba(242, 67, 180, .55) !important; }
+.feature-icon { width: 48px; height: 48px; background: rgba(242, 67, 180, .13); color: #ff79d2; font-size: 1.55rem; }
+.feature-card .card-title { font-weight: 700; }
+.feature-card .card-text { color: #c9c1d5; font-size: .9rem; line-height: 1.7; }
+
 @media (max-width: 991.98px) {
   .navbar-collapse { padding: .75rem 0 1rem; }
   .navbar-nav .nav-link { padding-left: 0; }
