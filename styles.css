@@ -82,6 +82,29 @@ body {
 .feature-card .card-title { font-weight: 700; }
 .feature-card .card-text { color: #c9c1d5; font-size: .9rem; line-height: 1.7; }
 
+.pricing-section { background: #171126; }
+.pricing-eyebrow { color: #ff79d2; font-size: .73rem; font-weight: 800; letter-spacing: .16em; }
+.pricing-title { font-family: "Space Grotesk", sans-serif; font-size: clamp(2.2rem, 4vw, 3.5rem); font-weight: 700; letter-spacing: -.06em; line-height: 1.05; }
+.pricing-title span { color: #f77ccc; }
+.pricing-intro { max-width: 400px; color: #c9c1d5; line-height: 1.7; }
+.pricing-table-wrap { border: 1px solid var(--line); }
+.pricing-table { --bs-table-bg: #1d172d; --bs-table-color: var(--white); --bs-table-border-color: var(--line); --bs-table-hover-bg: rgba(255, 255, 255, .035); --bs-table-hover-color: var(--white); min-width: 760px; }
+.pricing-table th, .pricing-table td { width: 23%; padding: 1.15rem 1.25rem; }
+.pricing-table thead th { height: 190px; vertical-align: middle; background: #211a31; }
+.pricing-table thead th:first-child { width: 31%; background: #1d172d; }
+.pricing-table tbody th { width: 31%; color: #e4ddec; font-size: .88rem; font-weight: 600; }
+.pricing-table tbody td { color: #c9c1d5; font-size: .84rem; }
+.pricing-table .plan-featured { background: rgba(242, 67, 180, .1); }
+.pricing-table thead .plan-featured { border-top: 2px solid var(--pink); }
+.plan-name, .plan-price, .plan-detail { display: block; }
+.plan-name { color: #f1e8f7; font-size: .73rem; font-weight: 800; letter-spacing: .12em; }
+.plan-price { margin-top: .35rem; font-family: "Space Grotesk", sans-serif; font-size: 2.3rem; font-weight: 700; letter-spacing: -.06em; }
+.plan-detail { margin-top: .1rem; color: #b7adc4; font-size: .77rem; font-weight: 400; letter-spacing: 0; }
+.featured-badge { background: var(--pink); color: #fff; font-size: .59rem; letter-spacing: .08em; }
+.included { color: #ff8bd4; font-weight: 700; }
+.not-included { color: #81788f; }
+.pricing-note { color: #aaa1b7; font-size: .75rem; }
+
 .gallery-section { background: var(--ink); }
 .gallery-eyebrow { color: #ff79d2; font-size: .73rem; font-weight: 800; letter-spacing: .16em; }
 .gallery-title { font-family: "Space Grotesk", sans-serif; font-size: clamp(2.2rem, 4vw, 3.5rem); font-weight: 700; letter-spacing: -.06em; line-height: 1.05; }
