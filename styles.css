@@ -88,10 +88,10 @@ body {
 .gallery-title span { color: #f77ccc; }
 .gallery-intro { max-width: 400px; color: #c9c1d5; line-height: 1.7; }
 .gallery-carousel { overflow: hidden; border: 1px solid var(--line); background: #171126; }
-.gallery-carousel .carousel-item { height: clamp(300px, 52vw, 600px); }
-.gallery-carousel .carousel-item::after { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(16, 11, 31, .82), transparent 58%); content: ""; }
-.gallery-carousel .carousel-item img { width: 100%; height: 100%; object-fit: cover; }
-.gallery-carousel .carousel-caption { z-index: 1; right: 12%; bottom: 3rem; left: 12%; }
+.gallery-carousel .carousel-item { isolation: isolate; height: clamp(340px, 52vw, 620px); background: radial-gradient(ellipse at center, #34283f, #171126 72%); }
+.gallery-carousel .carousel-item::after { position: absolute; z-index: 1; inset: 0; background: linear-gradient(0deg, rgba(16, 11, 31, .82), transparent 58%); content: ""; pointer-events: none; }
+.gallery-carousel .carousel-item img { position: relative; z-index: 1; width: 100%; height: 100%; padding: 0 clamp(1rem, 10vw, 9rem); object-fit: contain; }
+.gallery-carousel .carousel-caption { z-index: 2; right: 12%; bottom: 2rem; left: 12%; }
 .gallery-caption-label { color: #ff91d8; font-size: .7rem; font-weight: 800; letter-spacing: .16em; }
 .gallery-carousel .carousel-caption h3 { margin-top: .5rem; font-family: "Space Grotesk", sans-serif; font-size: clamp(1.8rem, 4vw, 3.5rem); font-weight: 700; }
 .gallery-carousel .carousel-indicators [data-bs-target] { width: 26px; height: 3px; border: 0; }
@@ -107,5 +107,8 @@ body {
   .hero-section > .container { padding-top: 3.5rem; padding-bottom: 3.5rem; }
   .hero-title { font-size: clamp(3rem, 14vw, 4.5rem); }
   .hero-subtitle { font-size: 1rem; }
-  .gallery-carousel .carousel-caption { right: 12%; bottom: 2.5rem; left: 12%; }
+  .gallery-carousel .carousel-item { height: clamp(340px, 100vw, 500px); }
+  .gallery-carousel .carousel-item img { padding: .5rem; }
+  .gallery-carousel .carousel-caption { right: 10%; bottom: 1.8rem; left: 10%; }
+  .gallery-carousel .carousel-caption h3 { font-size: clamp(1.35rem, 6vw, 2rem); }
 }
