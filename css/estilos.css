@@ -45,12 +45,13 @@ body {
 .btn-primary {
   --bs-btn-bg: var(--pink);
   --bs-btn-border-color: var(--pink);
-  --bs-btn-hover-bg: #d82c9a;
-  --bs-btn-hover-border-color: #d82c9a;
-  --bs-btn-active-bg: #c51e88;
-  --bs-btn-active-border-color: #c51e88;
-  --bs-btn-color: #fff;
-  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #ff79d2;
+  --bs-btn-hover-border-color: #ff79d2;
+  --bs-btn-active-bg: #ff91d8;
+  --bs-btn-active-border-color: #ff91d8;
+  --bs-btn-color: var(--ink);
+  --bs-btn-hover-color: var(--ink);
+  --bs-btn-active-color: var(--ink);
   border-radius: 999px;
   font-weight: 700;
 }
@@ -70,6 +71,22 @@ body {
 .hero-subtitle { max-width: 490px; color: #c9c1d5; font-size: 1.1rem; line-height: 1.75; }
 .hero-image { width: 100%; max-height: 570px; object-fit: cover; box-shadow: 0 24px 70px rgba(0, 0, 0, .35) !important; }
 .hero-actions .btn { padding-right: 1.5rem; padding-left: 1.5rem; }
+
+.lineup-section { background: #171126; --bs-primary: #ff79d2; --bs-primary-rgb: 255, 121, 210; }
+.lineup-eyebrow { color: #ff79d2; font-size: .73rem; font-weight: 800; letter-spacing: .16em; }
+.lineup-title { font-family: "Space Grotesk", sans-serif; font-size: clamp(2.2rem, 4vw, 3.5rem); font-weight: 700; letter-spacing: -.06em; }
+.lineup-title span { color: #f77ccc; }
+.lineup-intro { max-width: 400px; color: #c9c1d5; line-height: 1.7; }
+.lineup-tabs { top: 72px; z-index: 1020; background: #171126; }
+.lineup-tabs .nav-tabs { --bs-nav-tabs-border-color: var(--line); --bs-nav-tabs-link-active-bg: #211a31; --bs-nav-tabs-link-active-color: var(--white); --bs-nav-tabs-link-active-border-color: var(--line) var(--line) #211a31; }
+.lineup-tabs .nav-link { color: #d5ccd8; font-size: .8rem; font-weight: 700; }
+.lineup-tabs .nav-link:hover, .lineup-section .nav-pills .nav-link:hover { color: #ff91d8; }
+.lineup-section .nav-pills .nav-link { color: #e1dbea; }
+.artist-card { border-color: var(--line) !important; background: linear-gradient(145deg, #211a31, #191326); color: var(--white); }
+.artist-card .card-img-top { height: 260px; object-fit: cover; background: #211a31; }
+.artist-card .figure-caption { color: #c9c1d5; }
+.artist-card .card-text { color: #c9c1d5; line-height: 1.7; }
+.lineup-section .text-primary { color: #ff79d2 !important; }
 
 .features-section { background: #171126; }
 .features-eyebrow { color: #ff79d2; font-size: .73rem; font-weight: 800; letter-spacing: .16em; }
@@ -129,6 +146,11 @@ body {
 .gallery-carousel .carousel-caption h3 { margin-top: .5rem; font-family: "Space Grotesk", sans-serif; font-size: clamp(1.8rem, 4vw, 3.5rem); font-weight: 700; }
 .gallery-carousel .carousel-indicators [data-bs-target] { width: 26px; height: 3px; border: 0; }
 .gallery-carousel .carousel-control-prev, .gallery-carousel .carousel-control-next { z-index: 2; width: 9%; }
+.gallery-section .breadcrumb { --bs-breadcrumb-divider-color: #aaa1b7; --bs-breadcrumb-item-active-color: #d5ccd8; }
+.gallery-section .breadcrumb a { color: #ff91d8; }
+.gallery-section .pagination { --bs-pagination-bg: #211a31; --bs-pagination-color: #f9f7ff; --bs-pagination-border-color: var(--line); --bs-pagination-hover-bg: #312342; --bs-pagination-hover-color: #ff91d8; --bs-pagination-hover-border-color: rgba(255, 121, 210, .4); --bs-pagination-focus-bg: #312342; --bs-pagination-focus-box-shadow: 0 0 0 .2rem rgba(242, 67, 180, .2); }
+.gallery-section .pagination .page-link { border-radius: .5rem; }
+.gallery-section .btn-group { display: flex; justify-content: center; }
 
 .reviews-section { background: #171126; }
 .reviews-eyebrow { color: #ff79d2; font-size: .73rem; font-weight: 800; letter-spacing: .16em; }
@@ -143,7 +165,7 @@ body {
 .review-stars { color: #ffc866; font-size: .95rem; letter-spacing: .16em; }
 .review-quote { color: #e8e1ee; font-family: "Space Grotesk", sans-serif; font-size: 1.02rem; line-height: 1.65; }
 .review-author { display: grid; gap: .2rem; border-top: 1px solid var(--line); padding-top: 1rem; }
-.review-author strong { font-size: .82rem; }
+.review-author h3 { margin: 0; font-size: .82rem; font-weight: 700; }
 .review-author span { color: #aaa1b7; font-size: .73rem; }
 
 .contact-section { background: linear-gradient(180deg, #171126 0%, #100b1f 100%); }

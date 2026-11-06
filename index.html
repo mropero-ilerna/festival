@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -31,8 +31,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Planifica</a>
                 <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#horarios">Horarios</a></li>
-                  <li><a class="dropdown-item" href="#ubicacion">Ubicación</a></li>
+                  <li><a class="dropdown-item" href="#entradas">Entradas</a></li>
                   <li><a class="dropdown-item" href="#faq">Preguntas frecuentes</a></li>
                 </ul>
               </li>
@@ -52,14 +51,105 @@
               <h1 class="hero-title">El ritmo de Corea <span>llega a ti.</span></h1>
               <p class="hero-subtitle mt-4 mb-4">Dos días para vivir la música, el baile y la cultura K-pop junto a quienes sienten el mismo pulso que tú.</p>
               <div class="d-flex flex-column flex-sm-row gap-3 hero-actions">
-                <a class="btn btn-primary btn-lg" href="#artistas">Descubre el lineup <span aria-hidden="true">↗</span></a>
+                <a class="btn btn-primary btn-lg" href="#artistas">Descubre a los artistas <span aria-hidden="true">↗</span></a>
                 <a class="btn btn-outline-light btn-lg" href="#entradas">Consigue tus entradas</a>
               </div>
             </div>
             <div class="col-lg-6">
-              <img class="img-fluid rounded-4 shadow hero-image" src="img/portada.jpg">
+              <img class="img-fluid rounded-4 shadow hero-image" src="img/portada.jpg" alt="Artistas actuando en el festival Hallyu Pulse">
             </div>
           </div>
+        </div>
+      </section>
+      <section class="lineup-section py-5 py-lg-6 position-relative" id="artistas">
+        <div class="container py-lg-5">
+          <div class="row align-items-end justify-content-between g-3 mb-4">
+            <div class="col-lg-7">
+              <p class="lineup-eyebrow mb-2">EL CARTEL</p>
+              <h2 class="lineup-title mb-0">Artistas que marcan <span>el pulso.</span></h2>
+            </div>
+            <div class="col-lg-4">
+              <p class="lineup-intro mb-0">Descubre algunos de los grupos que se reunirán en Hallyu Pulse.</p>
+            </div>
+          </div>
+          <nav class="lineup-tabs sticky-top mb-4" aria-label="Artistas destacados">
+            <ul class="nav nav-tabs" id="lineupTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="baby-monster-tab" data-bs-toggle="tab" data-bs-target="#baby-monster-panel" type="button" role="tab" aria-controls="baby-monster-panel" aria-selected="true">BABYMONSTER</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="stray-kids-tab" data-bs-toggle="tab" data-bs-target="#stray-kids-panel" type="button" role="tab" aria-controls="stray-kids-panel" aria-selected="false">STRAY KIDS</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="meovv-tab" data-bs-toggle="tab" data-bs-target="#meovv-panel" type="button" role="tab" aria-controls="meovv-panel" aria-selected="false">MEOVV</button>
+              </li>
+            </ul>
+          </nav>
+          <div class="tab-content" id="lineupTabContent">
+            <div class="tab-pane fade show active" id="baby-monster-panel" role="tabpanel" aria-labelledby="baby-monster-tab" tabindex="0">
+              <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-8 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+                  <article class="card artist-card position-relative border rounded-4 shadow h-100">
+                    <figure class="mb-0">
+                      <img src="img/group3.jpg" class="card-img-top img-fluid img-thumbnail" alt="BabyMonster, grupo femenino de K-pop">
+                      <figcaption class="figure-caption px-4 pt-3">BABYMONSTER · K-pop</figcaption>
+                    </figure>
+                    <div class="card-body text-white">
+                      <span class="badge text-bg-dark bg-dark text-white mb-3">ARTISTA DESTACADO</span>
+                      <h3 class="card-title">BabyMonster</h3>
+                      <p class="card-text">Una actuación llena de energía, coreografías potentes y grandes voces.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="stray-kids-panel" role="tabpanel" aria-labelledby="stray-kids-tab" tabindex="0">
+              <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-8 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+                  <article class="card artist-card position-relative border rounded-4 shadow h-100">
+                    <figure class="mb-0">
+                      <img src="img/group2.jpg" class="card-img-top img-fluid img-thumbnail" alt="Stray Kids, grupo masculino de K-pop">
+                      <figcaption class="figure-caption px-4 pt-3">STRAY KIDS · K-pop</figcaption>
+                    </figure>
+                    <div class="card-body text-white">
+                      <span class="badge text-bg-dark bg-dark text-white mb-3">ARTISTA DESTACADO</span>
+                      <h3 class="card-title">Stray Kids</h3>
+                      <p class="card-text">Ritmos intensos y un directo para cantar y bailar en comunidad.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="meovv-panel" role="tabpanel" aria-labelledby="meovv-tab" tabindex="0">
+              <div class="row justify-content-center g-4">
+                <div class="col-12 col-sm-8 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+                  <article class="card artist-card position-relative border rounded-4 shadow h-100">
+                    <figure class="mb-0">
+                      <img src="img/group1.jpg" class="card-img-top img-fluid img-thumbnail" alt="MEOVV, grupo femenino de K-pop">
+                      <figcaption class="figure-caption px-4 pt-3">MEOVV · K-pop</figcaption>
+                    </figure>
+                    <div class="card-body text-white">
+                      <span class="badge text-bg-dark bg-dark text-white mb-3">ARTISTA DESTACADO</span>
+                      <h3 class="card-title">MEOVV</h3>
+                      <p class="card-text">Una nueva propuesta de K-pop que llega con estilo propio al escenario.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="mt-4" aria-label="Accesos rápidos del festival">
+            <ul class="nav nav-pills justify-content-center gap-2">
+              <li class="nav-item"><a class="nav-link" href="#experiencia">La experiencia</a></li>
+              <li class="nav-item"><a class="nav-link" href="#entradas">Entradas</a></li>
+              <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+            </ul>
+          </nav>
+          <div class="btn-group mt-3" role="group" aria-label="Más información del festival">
+            <a class="btn btn-outline-light" href="#galeria">Ver galería</a>
+            <a class="btn btn-outline-light" href="#entradas">Ver entradas</a>
+          </div>
+          <p class="text-primary text-center mt-4 mb-0 d-none d-md-block">El cartel puede actualizarse; consulta esta página para conocer las novedades.</p>
         </div>
       </section>
       <section class="features-section py-5 py-lg-6" id="experiencia">
@@ -250,7 +340,14 @@
               <p class="gallery-intro mb-0">Revive la energía, la música y los momentos que hacen único a Hallyu Pulse.</p>
             </div>
           </div>
-          <div id="festivalGallery" class="carousel slide gallery-carousel rounded-4 shadow">
+          <nav aria-label="Ruta de navegación" class="mb-4">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#inicio">Inicio</a></li>
+              <li class="breadcrumb-item"><a href="#artistas">Artistas</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Galería</li>
+            </ol>
+          </nav>
+          <div id="festivalGallery" class="carousel slide gallery-carousel rounded-4 shadow" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#festivalGallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Ver imagen 1"></button>
               <button type="button" data-bs-target="#festivalGallery" data-bs-slide-to="1" aria-label="Ver imagen 2"></button>
@@ -288,6 +385,15 @@
               <span class="visually-hidden">Imagen siguiente</span>
             </button>
           </div>
+          <nav class="mt-3" aria-label="Páginas de la galería">
+            <ul class="pagination justify-content-center mb-0">
+              <li class="page-item"><button class="page-link" type="button" data-bs-target="#festivalGallery" data-bs-slide="prev" aria-label="Imagen anterior">Anterior</button></li>
+              <li class="page-item active"><button class="page-link" type="button" data-bs-target="#festivalGallery" data-bs-slide-to="0" aria-label="Ver imagen 1" aria-current="page">1</button></li>
+              <li class="page-item"><button class="page-link" type="button" data-bs-target="#festivalGallery" data-bs-slide-to="1" aria-label="Ver imagen 2">2</button></li>
+              <li class="page-item"><button class="page-link" type="button" data-bs-target="#festivalGallery" data-bs-slide-to="2" aria-label="Ver imagen 3">3</button></li>
+              <li class="page-item"><button class="page-link" type="button" data-bs-target="#festivalGallery" data-bs-slide="next" aria-label="Imagen siguiente">Siguiente</button></li>
+            </ul>
+          </nav>
         </div>
       </section>
       <section class="reviews-section py-5 py-lg-6" id="opiniones">
@@ -316,7 +422,7 @@
                   <p class="review-stars mb-3" role="img" aria-label="5 de 5 estrellas">★★★★★</p>
                   <blockquote class="review-quote mb-4">“Estar frente al escenario y cantar con tanta gente que comparte tu pasión sería un recuerdo para siempre.”</blockquote>
                   <div class="review-author mt-auto">
-                    <strong>Fan de K-pop</strong>
+                    <h3>Fan de K-pop</h3>
                     <span>Experiencia ilustrativa</span>
                   </div>
                 </div>
@@ -332,7 +438,7 @@
                   <p class="review-stars mb-3" role="img" aria-label="5 de 5 estrellas">★★★★★</p>
                   <blockquote class="review-quote mb-4">“Aprender una coreografía con otros fans y terminar bailándola juntos suena increíble.”</blockquote>
                   <div class="review-author mt-auto">
-                    <strong>Fan de K-pop</strong>
+                    <h3>Fan de K-pop</h3>
                     <span>Experiencia ilustrativa</span>
                   </div>
                 </div>
@@ -348,7 +454,7 @@
                   <p class="review-stars mb-3" role="img" aria-label="5 de 5 estrellas">★★★★★</p>
                   <blockquote class="review-quote mb-4">“La mezcla de música, cultura coreana y comunidad hace que el festival tenga algo especial.”</blockquote>
                   <div class="review-author mt-auto">
-                    <strong>Fan de K-pop</strong>
+                    <h3>Fan de K-pop</h3>
                     <span>Experiencia ilustrativa</span>
                   </div>
                 </div>
@@ -429,7 +535,7 @@
       </section>
     </main>
     <footer class="site-footer">
-      <div class="container py-5">
+      <div class="container-fluid px-4 px-lg-5 py-5">
         <div class="row g-4 align-items-center">
           <div class="col-lg-4">
             <a class="navbar-brand d-flex align-items-center gap-2 footer-brand" href="#inicio" aria-label="Hallyu Pulse, inicio">
@@ -440,7 +546,7 @@
           <div class="col-lg-4">
             <div class="footer-links d-flex flex-wrap justify-content-lg-center gap-3 gap-lg-4">
               <a href="#inicio">Inicio</a>
-              <a href="#artistas">Artistas</a>
+                <a href="#artistas">Artistas</a>
               <a href="#experiencia">Experiencia</a>
               <a href="#entradas">Entradas</a>
               <a href="#contacto">Contacto</a>
@@ -471,5 +577,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/festival.js"></script>
   </body>
 </html>
